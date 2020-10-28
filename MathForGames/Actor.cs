@@ -103,7 +103,7 @@ namespace MathForGames
             UpdateFacing();
 
             //Increase position by the current velocity
-            _position += _velocity;
+            _position += _velocity * deltaTime;
         }
 
         public virtual void Draw()

@@ -272,7 +272,7 @@ namespace MathForGames
             Start();
 
             //Loops the game until either the game is set to be over or the window closes
-            while(!_gameOver || !Raylib.WindowShouldClose())
+            while(!_gameOver && !Raylib.WindowShouldClose())
             {
                 //Stores the current time between frames
                 float deltaTime = Raylib.GetFrameTime();
